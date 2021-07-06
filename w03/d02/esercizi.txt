@@ -1,0 +1,5 @@
+1: al caricamento della pagina, via JS, il target deve contenere "Hello World"
+2: al click del bottone, il target deve contenere "Hello World" - via attributo onclick
+3: come sopra, ma usando addEventListener() per l'evento click
+4: al click del bottone aggiungere al target un elemento LI contenente il nome indicato nell'input
+5: al click del bottone loggare un oggetto contenente nome, cognome, data di nascita come da input
