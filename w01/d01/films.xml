@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE films SYSTEM "schema.dtd">
+<films>
+    <film durata="">
+        <titolo></titolo>
+        <annodiproduzione></annodiproduzione>
+        <regista>
+            <nome></nome>
+            <cognome></cognome>
+        </regista>
+        <attori nome="" cognome=""/>
+        <attori nome="" cognome=""/>
+    </film>
+    <film durata="">
+        <titolo></titolo>
+        <annodiproduzione></annodiproduzione>
+        <regista>
+            <nome></nome>
+            <cognome></cognome>
+        </regista>
+        <attori nome="" cognome=""/>
+        <attori nome="" cognome=""/>
+    </film>
+    <film durata="">
+        <titolo></titolo>
+        <annodiproduzione></annodiproduzione>
+        <regista>
+            <nome></nome>
+            <cognome></cognome>
+        </regista>
+        <attori nome="" cognome=""/>
+        <attori nome="" cognome=""/>
+    </film>
+</films>

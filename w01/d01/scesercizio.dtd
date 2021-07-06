@@ -1,0 +1,33 @@
+<!ELEMENT cv (info,studi,impiego,interessi,referenze)>
+
+<!ELEMENT info (#PCDATA)>
+<!ATTLIST info 
+     nome CDATA #REQUIRED
+     indirizzo CDATA #REQUIRED
+     telefono CDATA #REQUIRED
+     email CDATA #REQUIRED>
+
+<!ELEMENT studi (qualifica+)>
+<!ELEMENT qualifica (#PCDATA)>
+<!ATTLIST qualifica 
+    istituto CDATA #REQUIRED
+    tipo CDATA #REQUIRED
+    dal CDATA #REQUIRED
+    al CDATA #REQUIRED>
+
+<!ELEMENT impiego (esperienza+)>
+<!ELEMENT esperienza (descrizione,compiti)>
+<!ELEMENT descrizione (#PCDATA)>
+<!ELEMENT compiti (#PCDATA)>
+<!ATTLIST esperienza 
+    azienda CDATA #REQUIRED
+    job_title CDATA #REQUIRED
+    dal CDATA #REQUIRED
+    al CDATA #REQUIRED>
+
+<!ELEMENT interessi (#PCDATA)>
+<!ELEMENT referenze (contatti)>
+<!ELEMENT contatti (#PCDATA)>
+<!ATTLIST contatti 
+    email CDATA #IMPLIED
+    telefono CDATA #IMPLIED>

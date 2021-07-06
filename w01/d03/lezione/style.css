@@ -1,0 +1,21 @@
+p.titolo{
+    color: red;
+}
+a:hover{
+color:green;
+}
+section p:last-child{
+ display: none;   
+}
+ul.menu a{
+text-decoration: none;
+}
+#prova + section{
+    color: blue;
+}
+html{
+    font-family: cursive;
+}
+.titolo{
+    text-align: center;
+}

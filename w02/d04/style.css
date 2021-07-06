@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@900&family=Kirang+Haerang&family=Lobster&display=swap');
+*{
+    padding:0;
+margin:0
+}
+
+#floattante{
+    background-color:darkcyan;
+    height: 300px;
+    width: 300px;
+    position:fixed;
+    left:-250px;
+    border-radius: 20px;
+    box-shadow:0px 0px 15px black;
+  /*  transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);*/
+    
+}
+#floattante:hover{
+   /* transform: translate(200px);*/
+    animation-name: floattanteMenu;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+@keyframes floattanteMenu{
+    100%{left:-100px};
+
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkgrey;
+    background-color: dimgray;
+}
+.titolo{
+    font-size:50px;
+    text-align: center;
+    color:lemonchiffon;
+}
+
+.button{
+    width:120px;
+    height: 50px;
+    margin:0 auto;
+    border-radius: 5px;
+    line-height: 45px;
+    margin-bottom: 2rem;
+    border:lavender solid;
+    animation-name: bottone;
+    animation-duration:5s;
+    animation-fill-mode: forward;
+}
+p:first-child{
+    position:relative;
+    top:0px;
+    animation-name: enter;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+@keyframes enter{
+    0%{top:-200px};
+    100%{top:0px};
+}
+.box{
+    text-align: center;
+    padding:20px;
+    margin:10px;
+}
+@keyframes bottone{
+0%{opacity:0; background-color:royalblue};
+20%{opacity:0.20; background-color:royalblue};
+40%{opacity:0.40; background-color:royalblue};
+60%{opacity:0.60; background-color:royalblue};
+80%{opacity:0.80; background-color:royalblue};
+100%{background-color:royalblue};
+}
+p:nth-child(2){
+    left:0%;
+    position:relative;
+    animation-name:entra2;
+    animation-duration:1.2s;
+}
+@keyframes entra2{
+0%{left:-100px};
+100%{left:200px};
+}
+div .button{
+margin-top: 20px;
+}
+p{
+    margin-top: 10px;
+}
+#quadrato{ 
+    height: 210px;
+    width: 210px;
+    border-radius: 10px;
+    margin:0 auto;
+    background-color:lavender;
+    animation-name: quadrati;
+    animation-duration: 5s;
+    position:relative;
+    animation-iteration-count: infinite;
+
+}
+@keyframes quadrati{
+    0%{left:0px;background-color:lavender;}
+    33%{left:200px;top:0px; background-color:lemonchiffon;}
+    66%{top:200px;left:200px; background-color:lightgoldenrodyellow;}
+    100%{left:0px;top:200px; background-color:lavender;}
+}
+#quadrato2{ 
+    height: 210px;
+    width: 210px;
+    border-radius: 10px;
+    margin:0 auto;
+    background-color:lavender;
+    animation-name: quadrati2;
+    animation-duration: 5s;
+    position:relative;
+    animation-iteration-count: infinite;
+
+}
+@keyframes quadrati2{
+    0%{right:0px;background-color:lavender;}
+    33%{right:200px;bottom:0px; background-color:lemonchiffon;}
+    66%{bottom:200px;right:200px; background-color:lightgoldenrodyellow;}
+    100%{right:0px;bottom:200px; background-color:lavender;}
+}
+.flex{
+    display: flex;
+    
+
+}
+#a{
+ width: 34vh;
+ height: 30px;
+ background-color:lavender;
+
+}
+#b{
+width: 34vh;
+height: 30px;
+background-color: lemonchiffon;
+}
+#c{
+width: 34vh;
+height: 30px;
+background-color: lavender;
+}

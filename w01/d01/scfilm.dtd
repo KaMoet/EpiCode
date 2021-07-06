@@ -1,0 +1,14 @@
+<!ELEMENT films (film+)>
+<!ELEMENT film (titolo,annodiproduzione,regista,attori+)>
+<!ATTLIST film durata CDATA #IMPLIED>
+<!ATTLIST film genere (avventura|drammatico|horror|sentimentale) #IMPLIED>
+<!ELEMENT titolo (#PCDATA)>
+<!ELEMENT annodiproduzione (#PCDATA)>
+
+<!ELEMENT regista (nome,cognome) >
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT cognome (#PCDATA)>
+
+<!ELEMENT attori EMPTY>
+<!ATTLIST attori nome CDATA #IMPLIED>
+<!ATTLIST attori cognome CDATA #REQUIRED>

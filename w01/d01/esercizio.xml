@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE cv SYSTEM "scesercizio.dtd">
+
+<cv>
+    <info
+        nome="Andrea Passaglia"
+        indirizzo="via Puccini"
+        telefono="3319184684"
+        email="apassaglia@gmail.com">Testo
+    </info>
+    <studi>
+        <qualifica
+            istituto="ITA N.B.Busdraghi"
+            tipo="Perito Agrario"
+            dal="2006"
+            al="2011">Testo
+        </qualifica>
+    </studi>
+    <impiego>
+        <esperienza
+            azienda="Brico Center"
+            job_title="commesso"
+            dal="2018"
+            al="2020">
+            <descrizione>assistente di vendita</descrizione>
+            <compiti>sistemazione reparto, assistenza alla vendita</compiti>
+        </esperienza>
+        <esperienza
+            azienda="Pangnomo"
+            job_title="fornaio"
+            dal="2016"
+            al="2018">
+            <descrizione>fornaio</descrizione>
+            <compiti>farcitura, pezzatura, cottura, smistamento e consegna</compiti>
+        </esperienza>
+    </impiego>
+    <interessi>fotografia, musica e natura</interessi>
+    <referenze>
+        <contatti
+            email="apassaglia@gmail.com"
+            telefono="3319184684">Testo
+        </contatti>
+    </referenze>
+</cv>
