@@ -9,8 +9,16 @@
 
 <body>
     <input id="name">
-    <button id="add">Add</button>
+    <button id="add" onclick="addList()">Add</button>
     <ul id="target"></ul>
+    <script>
+        let target = document.getElementById("target");
+        let name = document.getElementById("name");
+        function addList() {
+            target.innerHTML = target.innerHTML + '<li>' + nome.value + '</li>';
+        }
+
+    </script>
 </body>
 
 </html>
