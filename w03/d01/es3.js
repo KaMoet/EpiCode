@@ -5,7 +5,7 @@ var persona = {
     secondonome: "Luther",
     cognome: "King",
 
-    print:function(){
+    print: function () {
         console.log(this.nome, this.secondonome, this.cognome);
     }
 };
