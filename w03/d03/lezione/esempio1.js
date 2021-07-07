@@ -13,6 +13,8 @@ else {
 console.log("finito");
 
 
+var x=1;
+
 // lo switch si usa solo per uguaglianze
 switch (x) {
     case 1:
@@ -22,6 +24,17 @@ switch (x) {
         console.log("due");
         break;
     default:
-        console.log("qualcos'altro")
-
+        console.log("qualcos'altro");
 }
+
+var y;
+var x=24;
+
+// dico che il resto della divisione deve essere 0 quindi x pari
+if (x % 2 == 0) {
+    y = "pari";
+}
+else {
+    y = "dispari";
+}
+console.log(y);
