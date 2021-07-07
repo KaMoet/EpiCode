@@ -58,13 +58,6 @@ do {
     k++;
 } while (k < names.length);
 
-
-let utenti = ["fabio", "valeria", "francesca", "claudio"];
-
-for (let i = 0; i < utenti.leght - 1; i++) {
-    console.log(utenti[i]);
-}
-
 // for in
 
 let utente = {
