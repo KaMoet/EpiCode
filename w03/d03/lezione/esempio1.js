@@ -1,4 +1,4 @@
-var input =0;
+var input = 9;
 
 if (input > 0) {
     console.log("positivo");
