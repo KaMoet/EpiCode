@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="username" id="username">
+    <input type="password" id="password">
+    <button id="login_btn">Login</button>
+
+    <script>
+        let loginBtn = document.getElementById("login_btn");
+        loginBtn.addEventListener("click", login);
+
+        function login() {
+            let usr = document.querySelector("#username").value; 
+            let pwd = document.querySelector("#password").value;
+			
+			console.log('Wrong username or password');
+        }
+    </script>
+</body>
+</html>
