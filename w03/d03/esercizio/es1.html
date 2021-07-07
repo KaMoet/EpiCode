@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <script>
         let utenti = ["fabio", "valeria", "francesca", "claudio"];
+
+        for (let i = 0; i < utenti.leght - 1; i++) {
+            console.log(utenti[i]);
+        }
+
         let utente = {
-			"name": "Fabio",
-			"surname": "Bernardi"
-		};
+            "name": "Fabio",
+            "surname": "Bernardi"
+        };
+
+        for (const property in utente) {
+            console.log(utente[property]);
+        }
 
     </script>
 </body>
+
 </html>
 <!-- es1.html: dato un array e un oggetto, loggare
 	tutti gli elementi dell'array (con un for)

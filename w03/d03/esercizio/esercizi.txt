@@ -1,3 +1,4 @@
+
 es1.html: dato un array e un oggetto, loggare
 	tutti gli elementi dell'array (con un for)
 	tutte le proprietà dell'oggetto (con un for-in)
