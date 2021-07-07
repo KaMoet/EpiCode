@@ -18,11 +18,12 @@
 
         let utente = {
             "name": "Fabio",
-            "surname": "Bernardi"
+            "surname": "Bernardi",
+            "job": "developer"
         };
 
-        for (const property in utente) {
-            console.log(utente[property]);
+        for (let property in utente) {
+            console.log(property + ":" + utente[property]);
         }
 
     </script>
