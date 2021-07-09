@@ -47,7 +47,7 @@ main {
 }
 
 article {
-    background-image: url(/Giorno4/assets/images/bg-carta.png);
+    background-image: url(/week01/d4/assets/images/bg-carta.png);
     background-repeat: repeat-y;
     background-size: 65px;
     padding: 1rem 2rem;
