@@ -5,6 +5,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-image: url(./R.jfif);
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 header {
   background-color:rgb(231, 101, 14);
