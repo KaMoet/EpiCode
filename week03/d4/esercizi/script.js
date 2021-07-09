@@ -1,5 +1,3 @@
-// TO-DO !
-
 const todoList = [];
 
 const todoListElement = document.querySelector("#myUL");
@@ -11,12 +9,11 @@ document.querySelector("#myInput").addEventListener("keydown", function(e) {
   }
 });
 
-//-------GETTING VALUES FROM INPUT TO ARRAY OF OBJECTS-------
 function addTodo() {
   const todoText = document.querySelector("#myInput").value;
 
   if (todoText == "") {
-    alert("You did not enter any item");
+    alert("non hai inserito niente");
   } else {
     const todoObject = {
       id: todoList.length,
@@ -24,15 +21,11 @@ function addTodo() {
       isDone: false,
     };
 
-    //---WITH UNSHIFT WE ADD THE NEW ELEMENT TO THE BEGINNING OF THE ARRAY
-    //--SO THAT THE NEW ITEMS SHOW UP ON TOP
     todoList.unshift(todoObject);
     displayTodos();
   }
 }
 
-//------CHANGING THE isDone VALUE TO TRUE WHEN THE ELEMENT IS CLICKED
-//------OR TO FALSE IF IT WAS TRUE BEFORE
 function doneTodo(todoId) {
   const selectedTodoIndex = todoList.findIndex((item) => item.id == todoId);
 
@@ -42,7 +35,6 @@ function doneTodo(todoId) {
   displayTodos();
 }
 
-//----TO DELETE AN ITEM; FROM THE LIST
 function deleteItem(x) {
   todoList.splice(
     todoList.findIndex((item) => item.id == x),
@@ -51,7 +43,6 @@ function deleteItem(x) {
   displayTodos();
 }
 
-//---------DISPLAYING THE ENTERED ITEMS ON THE SCREEN------
 function displayTodos() {
   todoListElement.innerHTML = "";
   document.querySelector("#myInput").value = "";
