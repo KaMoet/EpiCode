@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      let s1 = new Student("matteo", 28);
+      let s2 = new Student("lorenzo", 30);
+      let studenti = [s1, s2];
+
+      function Student(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+      Student.prototype.skills = [];
+
+      s1.skills = ["chimica", "pallavolo"];
+      console.log(studenti);
+    </script>
+  </body>
+</html>
+<!-- 3: scrivere una funzione costruttore Student() 
+    con proprietà name e age aggiungere in seguito al 
+    prototipo di Student la proprietà skills inizializzata 
+    con un array vuoto. Creare due Student
+	  settare esplicitamente le skills solo a uno dei due studenti
+	  loggare entrambi gli Student -->

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <input type="text" id="first" />
+    <input type="text" id="last" />
+    <button id="btn">OK</button>
+    <p id="target"></p>
+    <script>
+      // creo il costruttore user
+      function User(first, last) {
+        this.first = first;
+        this.last = last;
+        this.fullName = function () {
+          let fullName = first + " " + last;
+          return fullName;
+        };
+      }
+      document.getElementById("btn").addEventListener("click", function () {
+        newUser();
+      });
+      // definisco che la funzione new user mi
+      // scriva i valori di first e last
+      function newUser() {
+        let first = document.getElementById("first");
+        let last = document.getElementById("last");
+        let target = document.getElementById("target");
+        let newUser = new User(first.value, last.value);
+        target.textContent = newUser.fullName();
+      }
+    </script>
+  </body>
+</html>
+<!-- 2: scrivere una funzione costruttore User() con 
+    proprietà first e last, e un metodo fullName()
+	  una funzione invocata al click del bottone che:
+		crea un User con il first e last indicato dal chiamante
+		scrive nel paragrafo target il fullName() dell'user -->

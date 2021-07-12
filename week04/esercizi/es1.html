@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <input type="text" id="usr" />
+    <input type="password" id="pwd" />
+    <button id="btn">OK</button>
+    <script>
+      let user = document.getElementById("usr");
+      let password = document.getElementById("pwd");
+
+      document.getElementById("btn").addEventListener("click", function () {
+        login();
+      });
+      function User(id, name, pass, type) {
+        this.id = id;
+        this.name = name;
+        this.pass = pass;
+        this.type = type;
+      }
+      function UserType(id, access) {
+        this.id = id;
+        this.access = access;
+      }
+
+      type1 = new UserType("admin", "full");
+      type2 = new UserType("user", "write");
+      type3 = new UserType("guest", "read");
+
+      let u1 = new User(1, "andrea", "passkey1", type1);
+      let u2 = new User(0, "tania", "passkey2", type2);
+
+      function login() {
+        if (u1.name == user.value && u1.pass == pwd.value){
+          return alert("admin loggato")
+        }
+        if (u2.name == user.value && u2.pass == pwd.value){
+          return alert("utente loggato")
+        }
+        let userG = new User(-1, user.value, pwd.value, type3)
+        console.log(userG)
+        return alert("ospite loggato")
+      } 
+    </script>
+  </body>
+</html>
+
+<!-- 1: scrivere
+	  una funzione costruttore User() con proprietà name, id e type
+	  una funzione costruttore UserType() con proprietà id e access
+	  una funzione invocata al click del bottone che:
+		crea un User con 
+      name: il nome indicato dal chiamante
+			id: 0 per l'utente normale, 1 per admin, -1 utente non registrato
+			type: un UserType con proprietà
+				id: user, access: write (utente normale)
+				id: super, access: full (utente admin)
+				id: guest, access: read (utente non registrato)
+		logga lo User creato -->
