@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <p>Text color is <b>black</b></p>
+    <span>Text color is <b id="span_b">black</b></span>
     <button id="btn">Change color</button>
 
     <script>
@@ -18,12 +18,16 @@
         ["green", "gold"],
       ];
       var i = 0;
-      $("#btn").click(function () {
+      $("#btn").on("click",()=> {
         $("body")
           .css("background-color", colors[i][0])
           .css("color", colors[i][1]);
-        $("b").text(colors[i][1]);
-        i < colors.length - 1 ? i++ : (i = 0);
+        $("span_b").text(colors[i][1]);
+        if (i < colors.length - 1) {
+          i++;
+        } else {
+          i = 0;
+        }
       });
     </script>
   </body>
