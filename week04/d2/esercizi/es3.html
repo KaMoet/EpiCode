@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <h1>I'm slowly desappearing ...</h1>
+    <script>
+        // imposto una animazione che dura 5 secondi
+        $('h1').fadeOut(5000);
+        // imposto timeout di 5 sec
+        setTimeout(() => {
+            alert('now I am here!');
+        }, 5000);
+    </script>
+</body>
+
+</html>
+<!-- 3: al caricamento della pagina
+     animare l'H1 per farlo scomparire nel giro di qualche secondo
+     al termine dell'operazione loggare un messaggio -->

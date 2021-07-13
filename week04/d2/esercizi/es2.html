@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Users</h1>
+
+    <ul id="users"></ul>
+    <button id="btn">Get users</button>
+    <script>
+      $("#btn").on("click", () => {
+        let x = $("#users");
+        $.getJSON("./data/info.json", function (json) {
+          for (let i = 0; i < json.users.length; i++) {
+            console.log(json.users[i]);
+            x.append("<li>" + json.users[i].name + "  " + json.users[i].surname + "  " + json.users[i].age + "</li>");
+          }
+        })
+      });
+    </script>
+  </body>
+</html>
+<!-- 2: al click del bottone
+	 leggere via AJAX il file info.json nel folder data
+	 popolare la UL con gli utenti presenti nel JSON -->

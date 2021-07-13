@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body>
+    <p>Text color is <b>black</b></p>
+    <button id="btn">Change color</button>
+
+    <script>
+      var colors = [
+        ["red", "white"],
+        ["black", "gray"],
+        ["green", "gold"],
+      ];
+      var i = 0;
+      $("#btn").click(function () {
+        $("body")
+          .css("background-color", colors[i][0])
+          .css("color", colors[i][1]);
+        $("b").text(colors[i][1]);
+        i < colors.length - 1 ? i++ : (i = 0);
+      });
+    </script>
+  </body>
+</html>
+<!-- 4: al click del bottone
+	 cambiare testo, sfondo e colore per (ogni) span in un paragrafo -->
