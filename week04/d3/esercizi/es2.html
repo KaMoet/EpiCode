@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qwicksilver</title>
+    <script src="https://kit.fontawesome.com/29ee0bc57e.js" crossorigin="anonymous"></script>
+    </script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url(./media/x.jfif);
+        background-size: 85em;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top:2em;
+        text-align: center;
+        height:100vh;
+      }
+      p{
+        color: rgb(255, 255, 255);
+        font-size: 70px;
+        background-color:rgb(48, 83, 113);
+        margin-top: 10px;
+      }
+      button {
+        padding: 20px;
+        border-radius: 100px;
+        margin: 10px;
+        background-color:rgb(48, 83, 113);
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-size: larger;
+      }
+    </style>
+  </head>
+
+  <body>
+    <video
+      controls
+      id="video"
+      src="./media/quick.mp4"
+      type="video/youtube"
+    ></video
+    ><br />
+    <button id="play"><i class="fas fa-play"></i></button>
+    <button id="stop"><i class="fas fa-stop"></i></button>
+    <p id="duration"></p>
+    <script>
+      var video = document.getElementById("video");
+      var duration = document.getElementById("duration");
+      document.getElementById("play").addEventListener("click", play);
+      document.getElementById("stop").addEventListener("click", stop);
+
+      function play() {
+        video.play();
+      }
+      function stop() {
+        video.pause();
+        video.currentTime = 0;
+      }
+      video.addEventListener('timeupdate', () =>{
+        let minutes = Math.round(video.currentTime / 60);
+        let seconds = Math.round(video.currentTime - minutes * 60);
+        if (minutes < 10){
+          minutes = '0' + minutes;
+        }
+        if (seconds < 10){
+          seconds = '0' + seconds;
+        }
+        duration.textContent = minutes + ':' + seconds;
+      });
+    </script>
+  </body>
+</html>
+<!-- 2. aggiungere un src all'elemento video
+	 aggiungere funzioni eseguibili via click sui bottoni (play/stop)
+	 agganciare all'evento timeupdate sul video una funzione che aggiorna il p duration con il currentTime -->

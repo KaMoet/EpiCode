@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <title>Jurassic Park</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url(./media/back.jfif);
+        background-size: 85em;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 33em;
+        text-align: center;
+      }
+      button {
+        padding: 10px;
+        border-radius: 50px;
+        margin: 10px;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        border: solid 3px yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <audio controls id="audio">
+      <source src="./media/theme.mp3" type="audio/mp3" />
+    </audio>
+    <br />
+    <button id="play">Play</button>
+    <button id="back">Back</button>
+    <button id="forward">Forward</button>
+    <script>
+      var audio = document.getElementById("audio");
+      document.getElementById("play").addEventListener("click", click);
+      document.getElementById("back").addEventListener("click", back);
+      document.getElementById("forward").addEventListener("click", forward);
+
+      function click() {
+        if (document.getElementById("play").textContent == "Pause") {
+          audio.pause();
+          document.getElementById("play").textContent = "Play";
+        } else if (document.getElementById("play").textContent == "Play") {
+          audio.play();
+          document.getElementById("play").textContent = "Pause";
+        }
+      }
+
+      function back() {
+        audio.currentTime -= 10;
+      }
+
+      function forward() {
+        audio.currentTime += 10;
+      }
+    </script>
+  </body>
+</html>
+<!-- 1. aggiungere un src all'elemento audio
+	 aggiungere funzioni eseguibili via click sui bottoni 
+     (play/pause, aggiornamento currentTime) -->
