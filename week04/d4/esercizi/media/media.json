@@ -1,0 +1,12 @@
+{
+    "audio":[
+        {"title":"Hooked on a Feeling","file":"./media/brani/Hooked.mp3"},
+        {"title":"Go All the Way", "file":"./media/brani/Go All.mp3"},
+        {"title":"Spirit in the Sky", "file":"./media/brani/Spirit.mp3"}
+    ],
+    "video":[
+        {"title":"disc","file":"./media/video/disc.mp4"},
+        {"title":"octagon","file":"./media/video/octagon.mp4"},
+        {"title":"rotted","file":"./media/video/rotted.mp4"}
+    ]
+}

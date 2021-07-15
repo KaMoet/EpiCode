@@ -1,0 +1,35 @@
+.card-body{
+    background-color: rgb(243, 190, 125);
+}
+
+nav{
+    background-color: rgb(165, 42, 42);
+    color:white;
+    height:5em;
+    font-weight:bold;
+}
+#nome{
+    font-size:xx-large;
+    font-style: italic;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    font-weight: bold;
+    font-style:italic;
+    font-size:20px;
+    padding: 15px;
+    border-radius:5px;
+    border: solid 1px grey;
+    margin: 5px;
+    color: grey;
+    background-color:rgb(242, 226, 196);
+}
+.card-title{
+    font-size:30px;
+    font-style: italic;
+}
+p{
+    font-size: 23px;
+}
