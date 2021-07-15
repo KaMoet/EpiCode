@@ -41,7 +41,7 @@
       controls
       id="video"
       src="./media/quick.mp4"
-      type="video/youtube"
+      type="video/yputube"
     ></video
     ><br />
     <button id="play"><i class="fas fa-play"></i></button>
@@ -60,17 +60,15 @@
         video.pause();
         video.currentTime = 0;
       }
-      video.addEventListener('timeupdate', () =>{
-        let minutes = Math.round(video.currentTime / 60);
-        let seconds = Math.round(video.currentTime - minutes * 60);
-        if (minutes < 10){
-          minutes = '0' + minutes;
-        }
-        if (seconds < 10){
-          seconds = '0' + seconds;
-        }
-        duration.textContent = minutes + ':' + seconds;
-      });
+        video.addEventListener('timeupdate', () => {
+        let minutes = Math.floor(video.currentTime / 60);
+        let seconds = Math.ceil(video.currentTime % 60);
+        seconds--;
+        if (seconds >= 0 && seconds < 10) {
+        seconds = "0" + seconds }
+        console.log(seconds);
+        duration.textContent = `${minutes}:${seconds}`;
+        });
     </script>
   </body>
 </html>
