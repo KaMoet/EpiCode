@@ -1,7 +1,16 @@
-.card-body{
+#disc{
     background-color: rgb(243, 190, 125);
+    background-image:url(./disc.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
+#pell{
+    background-color: rgb(243, 190, 125);
+    background-image:url(./pell.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:whitesmoke;
+}
 nav{
     background-color: rgb(165, 42, 42);
     color:white;
@@ -16,6 +25,7 @@ ul{
     list-style-type: none;
 }
 li{
+    text-align: center;
     font-weight: bold;
     font-style:italic;
     font-size:20px;
@@ -24,7 +34,7 @@ li{
     border: solid 1px grey;
     margin: 5px;
     color: grey;
-    background-color:rgb(242, 226, 196);
+    background-color:rgba(242, 226, 196, 0.751);
 }
 .card-title{
     font-size:30px;

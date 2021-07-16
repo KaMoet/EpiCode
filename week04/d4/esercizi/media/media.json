@@ -5,8 +5,8 @@
         {"title":"Spirit in the Sky", "file":"./media/brani/Spirit.mp3"}
     ],
     "video":[
-        {"title":"disc","file":"./media/video/disc.mp4"},
-        {"title":"octagon","file":"./media/video/octagon.mp4"},
-        {"title":"rotted","file":"./media/video/rotted.mp4"}
+        {"title":"Vinile","file":"./media/video/disc.mp4"},
+        {"title":"Ottagoni","file":"./media/video/octagon.mp4"},
+        {"title":"Metal","file":"./media/video/rotted.mp4"}
     ]
 }
