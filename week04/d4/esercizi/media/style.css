@@ -1,12 +1,12 @@
 #disc{
     background-color: rgb(243, 190, 125);
-    background-image:url(./disc.jfif);
+    background-image:url(./images/disc.jfif);
     background-size: cover;
     background-repeat: no-repeat;
 }
 #pell{
     background-color: rgb(243, 190, 125);
-    background-image:url(./pell.jfif);
+    background-image:url(./images/pell.jfif);
     background-size: cover;
     background-repeat: no-repeat;
     color:whitesmoke;
